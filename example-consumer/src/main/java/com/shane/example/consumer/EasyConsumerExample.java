@@ -13,7 +13,7 @@ public class EasyConsumerExample {
 
     public static void main(String[] args) {
         // 需要获得 UserService 的实现类对象
-        UserService userService = null;
+        UserService userService = new UserServiceProxy();
         User user = new User();
         user.setName("shane");
         // 调用
